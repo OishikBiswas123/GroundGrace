@@ -22,7 +22,7 @@ export default function Footer() {
       <div className="container py-16 md:py-20">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
           <div className="md:col-span-2">
-            <Link href="/" className="relative block w-64 h-20">
+            <Link href="/" className="relative block w-80 h-24">
               <Image
                 src="/images/logo.png"
                 alt="GroundGrace"
@@ -57,7 +57,7 @@ export default function Footer() {
         </div>
         <div className="mt-12 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-white/40">
           <p>&copy; {new Date().getFullYear()} GroundGrace. All rights reserved.</p>
-          <p>Kolkata, India</p>
+          <p>Panihati, Kolkata</p>
         </div>
       </div>
     </footer>

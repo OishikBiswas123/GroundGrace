@@ -1,9 +1,9 @@
-﻿"use client";
+"use client";
 
 import { MessageCircle } from "lucide-react";
 
 export default function WhatsAppButton() {
-  const phone = "918001234567";
+  const phone = "918981891586";
 
   return (
     <a

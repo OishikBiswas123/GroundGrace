@@ -17,9 +17,9 @@ export default function ProcessPage() {
           <div className="container text-center">
             <p className="text-gg-gold text-sm uppercase tracking-[0.2em] font-medium mb-4">Our Process</p>
             <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-              A Seamless Journey
+              Mastering Every Detail
               <br />
-              <span className="text-gg-gold">from Start to Finish</span>
+              <span className="text-gg-gold">from Root to Roof</span>
             </h1>
           </div>
         </FadeInView>

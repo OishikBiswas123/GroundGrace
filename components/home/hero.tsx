@@ -21,7 +21,7 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="text-gg-gold text-sm md:text-base uppercase tracking-[0.3em] font-medium mb-6"
         >
-          Premium Construction & Interior Solutions
+          Where Structural Integrity Meets Design Elegance
         </motion.p>
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
@@ -41,9 +41,14 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.6 }}
           className="mt-6 text-white/60 text-base md:text-lg max-w-xl mx-auto leading-relaxed"
         >
-          GroundGrace delivers end-to-end building services — transforming empty
-          plots into finished dream homes and commercial spaces with precision
-          and elegance.
+          <span className="text-gg-gold font-semibold">Ground</span> — raw strength,
+          solid foundations, structural integrity.
+          <br />
+          <span className="text-gg-gold font-semibold">Grace</span> — elegant
+          design, premium finishes, luxury aesthetics.
+          <br />
+          <br />
+          We don&apos;t just build walls — we create beautiful, living masterpieces.
         </motion.p>
         <motion.div
           initial={{ opacity: 0, y: 20 }}

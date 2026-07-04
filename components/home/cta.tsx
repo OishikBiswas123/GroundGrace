@@ -8,12 +8,13 @@ export default function Cta() {
       <FadeInView>
         <div className="container relative z-10 text-center">
           <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
-            Ready to Build
+            Ready to Master
             <br />
             <span className="text-gg-gold">Your Dream Space?</span>
           </h2>
           <p className="mt-6 text-white/60 text-base md:text-lg max-w-lg mx-auto leading-relaxed">
-            Let&apos;s discuss your project. Schedule a free consultation with our team today.
+            From root to roof, we handle every detail with precision and elegance.
+            Schedule a free consultation with our team today.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link href="/contact" className="px-8 py-3.5 bg-gg-gold text-gg-black font-semibold text-sm uppercase tracking-widest hover:bg-gg-gold/90 transition-all">

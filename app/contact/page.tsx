@@ -43,28 +43,28 @@ export default function ContactPage() {
                     <MapPin size={20} className="text-gg-gold mt-0.5 flex-shrink-0" />
                     <div>
                       <h4 className="font-medium text-gg-black text-sm">Address</h4>
-                      <p className="text-gg-warm-gray text-sm mt-1">Kolkata, West Bengal, India</p>
+                      <p className="text-gg-warm-gray text-sm mt-1">Natagarh, Panihati, Kolkata - 700113</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
                     <Phone size={20} className="text-gg-gold mt-0.5 flex-shrink-0" />
                     <div>
                       <h4 className="font-medium text-gg-black text-sm">Phone</h4>
-                      <p className="text-gg-warm-gray text-sm mt-1">+91 80012 34567</p>
+                      <p className="text-gg-warm-gray text-sm mt-1">+91 89818 91586</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
                     <Mail size={20} className="text-gg-gold mt-0.5 flex-shrink-0" />
                     <div>
                       <h4 className="font-medium text-gg-black text-sm">Email</h4>
-                      <p className="text-gg-warm-gray text-sm mt-1">hello@groundgrace.com</p>
+                      <p className="text-gg-warm-gray text-sm mt-1">bagchisayan8@gmail.com</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
                     <MessageCircle size={20} className="text-gg-gold mt-0.5 flex-shrink-0" />
                     <div>
                       <h4 className="font-medium text-gg-black text-sm">WhatsApp</h4>
-                      <p className="text-gg-warm-gray text-sm mt-1">+91 80012 34567</p>
+                      <p className="text-gg-warm-gray text-sm mt-1">+91 89818 91586</p>
                     </div>
                   </div>
                 </div>

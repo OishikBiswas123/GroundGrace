@@ -1,5 +1,6 @@
-﻿import Hero from "@/components/home/hero";
+import Hero from "@/components/home/hero";
 import Intro from "@/components/home/intro";
+import LogoAnimation from "@/components/home/logo-animation";
 import Services from "@/components/home/services";
 import WhyUs from "@/components/home/why-us";
 import Testimonials from "@/components/home/testimonials";
@@ -11,6 +12,7 @@ export default function Home() {
     <>
       <Hero />
       <Intro />
+      <LogoAnimation />
       <Services />
       <WhyUs />
       <Testimonials />

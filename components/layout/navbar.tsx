@@ -19,7 +19,7 @@ export default function Navbar() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-black/5">
       <div className="container flex items-center justify-between h-20 md:h-24">
-        <Link href="/" className="relative w-52 md:w-64 h-14 md:h-16">
+        <Link href="/" className="relative w-72 md:w-96 h-16 md:h-20">
           <Image
             src="/images/logo.png"
             alt="GroundGrace"
