@@ -24,14 +24,14 @@ export default function AboutPage() {
                 &ldquo;We don&apos;t just build walls; we create beautiful, living masterpieces.&rdquo;
               </p>
               <p>
-                GroundGrace was founded by <strong className="text-gg-black">Sayan Bagchi</strong> with a singular vision
+                GroundGrace was founded by <strong className="text-gg-black">Sayan Bagchi</strong>{' '}with a singular vision
                 &mdash; to redefine construction and interior design in India by fusing
                 raw structural strength with elegant design aesthetics.
               </p>
               <p>
-                The name itself tells our story: <strong className="text-gg-black">Ground</strong> for the
+                The name itself tells our story: <strong className="text-gg-black">Ground</strong>{' '}for the
                 heavy-duty engineering &mdash; excavation, foundations, blueprints,
-                brick, and mortar. <strong className="text-gg-black">Grace</strong> for the high-end
+                brick, and mortar. <strong className="text-gg-black">Grace</strong>{' '}for the high-end
                 artistry &mdash; space planning, lighting, textures, and premium finishes.
                 Locked together, they represent a promise: you hire one company to
                 handle everything from start to finish.

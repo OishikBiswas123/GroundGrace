@@ -17,14 +17,14 @@ export default function Intro() {
               </h2>
               <div className="mt-6 space-y-4 text-gg-warm-gray leading-relaxed">
                 <p>
-                  <strong className="text-gg-black">Ground</strong> represents
+                  <strong className="text-gg-black">Ground</strong>{' '}represents
                   the raw, heavy-duty engineering side of our company.
                   Excavation, solid foundations, blueprints, brick, and mortar
                   &mdash; building a structure from absolute nothing. It conveys
                   strength, trust, and structural integrity.
                 </p>
                 <p>
-                  <strong className="text-gg-black">Grace</strong> represents
+                  <strong className="text-gg-black">Grace</strong>{' '}represents
                   the artistic, high-end design side. Elegance, space planning,
                   lighting, textures, premium finishes, and luxury aesthetics.
                   It conveys beauty, sophistication, and a high-end lifestyle.

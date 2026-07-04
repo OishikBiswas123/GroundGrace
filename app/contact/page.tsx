@@ -39,41 +39,34 @@ export default function ContactPage() {
               <div>
                 <h2 className="font-heading text-2xl font-bold text-gg-black mb-6">Contact Information</h2>
                 <div className="space-y-6">
-                  <div className="flex items-start gap-4">
+                  <a href="https://maps.google.com/?q=Natagarh+Panihati+Kolkata+700113" target="_blank" rel="noopener noreferrer" className="flex items-start gap-4 group">
                     <MapPin size={20} className="text-gg-gold mt-0.5 flex-shrink-0" />
                     <div>
                       <h4 className="font-medium text-gg-black text-sm">Address</h4>
-                      <p className="text-gg-warm-gray text-sm mt-1">Natagarh, Panihati, Kolkata - 700113</p>
+                      <p className="text-gg-warm-gray text-sm mt-1 group-hover:text-gg-gold transition-colors">Natagarh, Panihati, Kolkata - 700113</p>
                     </div>
-                  </div>
-                  <div className="flex items-start gap-4">
+                  </a>
+                  <a href="tel:+918981891586" className="flex items-start gap-4 group">
                     <Phone size={20} className="text-gg-gold mt-0.5 flex-shrink-0" />
                     <div>
                       <h4 className="font-medium text-gg-black text-sm">Phone</h4>
-                      <p className="text-gg-warm-gray text-sm mt-1">+91 89818 91586</p>
+                      <p className="text-gg-warm-gray text-sm mt-1 group-hover:text-gg-gold transition-colors">+91 89818 91586</p>
                     </div>
-                  </div>
-                  <div className="flex items-start gap-4">
+                  </a>
+                  <a href="mailto:bagchisayan8@gmail.com" className="flex items-start gap-4 group">
                     <Mail size={20} className="text-gg-gold mt-0.5 flex-shrink-0" />
                     <div>
                       <h4 className="font-medium text-gg-black text-sm">Email</h4>
-                      <p className="text-gg-warm-gray text-sm mt-1">bagchisayan8@gmail.com</p>
+                      <p className="text-gg-warm-gray text-sm mt-1 group-hover:text-gg-gold transition-colors">bagchisayan8@gmail.com</p>
                     </div>
-                  </div>
-                  <div className="flex items-start gap-4">
+                  </a>
+                  <a href="https://wa.me/918981891586" target="_blank" rel="noopener noreferrer" className="flex items-start gap-4 group">
                     <MessageCircle size={20} className="text-gg-gold mt-0.5 flex-shrink-0" />
                     <div>
                       <h4 className="font-medium text-gg-black text-sm">WhatsApp</h4>
-                      <p className="text-gg-warm-gray text-sm mt-1">+91 89818 91586</p>
+                      <p className="text-gg-warm-gray text-sm mt-1 group-hover:text-gg-gold transition-colors">+91 89818 91586</p>
                     </div>
-                  </div>
-                </div>
-                <div className="mt-10">
-                  <h3 className="font-heading font-bold text-gg-black mb-4">Office Hours</h3>
-                  <div className="text-sm text-gg-warm-gray space-y-1">
-                    <p>Monday -- Saturday: 10:00 AM -- 7:00 PM</p>
-                    <p>Sunday: By appointment</p>
-                  </div>
+                  </a>
                 </div>
               </div>
             </FadeInView>
