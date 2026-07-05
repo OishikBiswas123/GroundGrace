@@ -2,6 +2,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 
 const navLinks = [
@@ -15,6 +16,12 @@ const navLinks = [
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const pathname = usePathname();
+
+  function isActive(href: string) {
+    if (href === "/") return pathname === "/";
+    return pathname.startsWith(href);
+  }
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-black/5">
@@ -33,9 +40,16 @@ export default function Navbar() {
             <Link
               key={link.href}
               href={link.href}
-              className="text-sm font-medium text-gg-warm-gray hover:text-gg-black transition-colors tracking-wide uppercase"
+              className={`text-sm font-medium tracking-wide uppercase transition-colors relative ${
+                isActive(link.href)
+                  ? "text-gg-gold font-bold"
+                  : "text-gg-warm-gray hover:text-gg-black"
+              }`}
             >
               {link.label}
+              {isActive(link.href) && (
+                <span className="absolute -bottom-1 left-0 right-0 h-0.5 bg-gg-gold rounded-full" />
+              )}
             </Link>
           ))}
         </nav>
@@ -55,7 +69,11 @@ export default function Navbar() {
                 key={link.href}
                 href={link.href}
                 onClick={() => setOpen(false)}
-                className="text-sm font-medium text-gg-warm-gray hover:text-gg-black transition-colors tracking-wide uppercase"
+                className={`text-sm font-medium tracking-wide uppercase transition-colors ${
+                  isActive(link.href)
+                    ? "text-gg-gold font-bold"
+                    : "text-gg-warm-gray hover:text-gg-black"
+                }`}
               >
                 {link.label}
               </Link>
