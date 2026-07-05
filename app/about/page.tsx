@@ -1,4 +1,16 @@
+import type { Metadata } from "next";
 import FadeInView from "@/components/shared/fade-in-view";
+
+export const metadata: Metadata = {
+  title: "About Sayan Bagchi & GroundGrace | Interior Design & Construction Kolkata",
+  description:
+    "Meet Sayan Bagchi, founder of GroundGrace — Kolkata's trusted name in luxury interior design and construction. Our story of blending structural Ground with design Grace. From foundations to finishes, we master every detail.",
+  openGraph: {
+    title: "About Sayan Bagchi & GroundGrace | Kolkata",
+    description:
+      "Founded by Sayan Bagchi — GroundGrace brings together structural engineering and luxury interior design under one roof in Kolkata.",
+  },
+};
 
 export default function AboutPage() {
   return (

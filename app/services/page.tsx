@@ -1,4 +1,16 @@
+import type { Metadata } from "next";
 import FadeInView from "@/components/shared/fade-in-view";
+
+export const metadata: Metadata = {
+  title: "Interior Design, Construction & Architecture Services | GroundGrace Kolkata",
+  description:
+    "GroundGrace offers comprehensive services: luxury interior design, residential & commercial construction, architectural planning, landscaping, and turnkey solutions in Kolkata, India.",
+  openGraph: {
+    title: "Services — Interior Design & Construction | GroundGrace Kolkata",
+    description:
+      "From structural engineering to luxury interiors — GroundGrace handles everything under one roof in Kolkata.",
+  },
+};
 
 const groundServices = [
   { title: "Construction", items: ["Residential Construction", "Commercial Construction", "Turnkey Construction", "Structural Engineering"], image: "/Illustrations/Construction%20site/big%20const.jpg" },

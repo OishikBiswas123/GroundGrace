@@ -16,9 +16,22 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "GroundGrace | Luxury Construction & Interior Design",
+  title: {
+    template: "%s | GroundGrace",
+    default: "GroundGrace — Luxury Interior Design & Construction in Kolkata",
+  },
   description:
-    "Premium construction and interior solutions. From root to roof, we craft your dream spaces with elegance and precision.",
+    "GroundGrace is Kolkata's premier interior design and construction company. Specializing in luxury villas, bungalows, residential & commercial spaces. Founded by Sayan Bagchi.",
+  openGraph: {
+    title: "GroundGrace — Luxury Interior Design & Construction in Kolkata",
+    description:
+      "Premium interior design and construction services in Kolkata. Luxury villas, bungalows, and dream spaces crafted with elegance.",
+    url: "https://groundgrace.vercel.app",
+    siteName: "GroundGrace",
+    locale: "en_IN",
+    type: "website",
+  },
+  robots: { index: true, follow: true },
 };
 
 export default function RootLayout({
@@ -33,6 +46,46 @@ export default function RootLayout({
         <main className="flex-1">{children}</main>
         <Footer />
         <WhatsAppButton />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              name: "GroundGrace",
+              founder: { "@type": "Person", name: "Sayan Bagchi" },
+              description:
+                "Luxury interior design and construction company in Kolkata. Specializing in luxury villas, bungalows, residential & commercial spaces.",
+              url: "https://groundgrace.vercel.app",
+              telephone: "+91 89818 91586",
+              email: "bagchisayan8@gmail.com",
+              address: {
+                "@type": "PostalAddress",
+                streetAddress: "Natagarh, Panihati",
+                addressLocality: "Kolkata",
+                addressRegion: "West Bengal",
+                postalCode: "700113",
+                addressCountry: "IN",
+              },
+              areaServed: [
+                { "@type": "City", name: "Kolkata" },
+                { "@type": "State", name: "West Bengal" },
+                { "@type": "Country", name: "India" },
+              ],
+              sameAs: ["https://wa.me/918981891586"],
+              knowsAbout: [
+                "Luxury Interior Design",
+                "Residential Construction",
+                "Commercial Construction",
+                "Architecture",
+                "Villa Design",
+                "Bungalow Construction",
+                "Modular Kitchen",
+                "Landscaping",
+              ],
+            }),
+          }}
+        />
       </body>
     </html>
   );

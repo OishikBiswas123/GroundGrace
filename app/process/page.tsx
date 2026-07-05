@@ -1,4 +1,16 @@
+import type { Metadata } from "next";
 import FadeInView from "@/components/shared/fade-in-view";
+
+export const metadata: Metadata = {
+  title: "Our Process — How We Build & Design | GroundGrace Kolkata",
+  description:
+    "From consultation to handover — GroundGrace's proven 6-step process for delivering premium interior design and construction projects in Kolkata. Consultation, Planning, Design, Construction, Interior, Handover.",
+  openGraph: {
+    title: "Our Process — From Root to Roof | GroundGrace Kolkata",
+    description:
+      "Discover GroundGrace's 6-step journey: Consultation, Planning, Design, Construction, Interior, and Handover. Mastering every detail.",
+  },
+};
 
 const steps = [
   { num: "01", title: "Consultation", desc: "We begin by understanding your vision, requirements, budget, and timeline. This is where your dream starts taking shape." },
