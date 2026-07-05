@@ -41,38 +41,42 @@ export default function Intro() {
           <FadeInView direction="right" delay={0.2}>
             <div className="grid grid-cols-2 gap-4">
               <div className="space-y-4">
-                <div className="bg-gg-black p-6 md:p-8">
-                  <div className="font-heading text-3xl md:text-4xl font-bold text-gg-gold">
-                    50+
+                <div className="relative overflow-hidden bg-gg-black p-6 md:p-8">
+                  <div className="absolute inset-0">
+                    <img src="/Illustrations/Construction%20site/villa construction.jpg" alt="" className="w-full h-full object-cover opacity-30" />
                   </div>
-                  <div className="mt-2 text-sm text-white/60 uppercase tracking-wider">
-                    Projects Completed
+                  <div className="relative z-10">
+                    <div className="font-heading text-3xl md:text-4xl font-bold text-gg-gold">01</div>
+                    <div className="mt-2 text-sm text-white/80 uppercase tracking-wider">Your Vision, Our Blueprint</div>
                   </div>
                 </div>
-                <div className="bg-gray-50 p-6 md:p-8">
-                  <div className="font-heading text-3xl md:text-4xl font-bold text-gg-black">
-                    10+
+                <div className="relative overflow-hidden bg-gray-50 p-6 md:p-8">
+                  <div className="absolute inset-0">
+                    <img src="/Illustrations/House%20indoor%20images/Interior.jpg" alt="" className="w-full h-full object-cover opacity-20" />
                   </div>
-                  <div className="mt-2 text-sm text-gg-warm-gray uppercase tracking-wider">
-                    Years Experience
+                  <div className="relative z-10">
+                    <div className="font-heading text-3xl md:text-4xl font-bold text-gg-black">02</div>
+                    <div className="mt-2 text-sm text-gray-600 uppercase tracking-wider">Tailor-Made Designs</div>
                   </div>
                 </div>
               </div>
               <div className="space-y-4 pt-8">
-                <div className="bg-gray-50 p-6 md:p-8">
-                  <div className="font-heading text-3xl md:text-4xl font-bold text-gg-black">
-                    100%
+                <div className="relative overflow-hidden bg-gray-50 p-6 md:p-8">
+                  <div className="absolute inset-0">
+                    <img src="/Illustrations/Construction%20site/Stairs cons.jpg" alt="" className="w-full h-full object-cover opacity-20" />
                   </div>
-                  <div className="mt-2 text-sm text-gg-warm-gray uppercase tracking-wider">
-                    Client Satisfaction
+                  <div className="relative z-10">
+                    <div className="font-heading text-3xl md:text-4xl font-bold text-gg-black">03</div>
+                    <div className="mt-2 text-sm text-gray-600 uppercase tracking-wider">Complete Transparency</div>
                   </div>
                 </div>
-                <div className="bg-gg-black p-6 md:p-8">
-                  <div className="font-heading text-3xl md:text-4xl font-bold text-gg-gold">
-                    200+
+                <div className="relative overflow-hidden bg-gg-black p-6 md:p-8">
+                  <div className="absolute inset-0">
+                    <img src="/Illustrations/House%20outdoor%20images/modern villa.jpg" alt="" className="w-full h-full object-cover opacity-30" />
                   </div>
-                  <div className="mt-2 text-sm text-white/60 uppercase tracking-wider">
-                    Experts &amp; Craftsmen
+                  <div className="relative z-10">
+                    <div className="font-heading text-3xl md:text-4xl font-bold text-gg-gold">04</div>
+                    <div className="mt-2 text-sm text-white/80 uppercase tracking-wider">Root to Roof Delivery</div>
                   </div>
                 </div>
               </div>

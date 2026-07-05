@@ -6,8 +6,16 @@ import Link from "next/link";
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gg-black">
-      <div className="absolute inset-0 bg-gradient-to-br from-gg-black via-gg-black/95 to-gg-black/90" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_#c9a84c15,_transparent_70%)]" />
+      <video
+        src="/Illustrations/Villa%20Animations/Villa%20animation%20Full.mp4"
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover"
+      />
+      <div className="absolute inset-0 bg-gradient-to-br from-gg-black/80 via-gg-black/70 to-gg-black/80" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_#c9a84c20,_transparent_60%)]" />
 
       <motion.div
         initial={{ opacity: 0, y: 30 }}
@@ -75,7 +83,7 @@ export default function Hero() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.2 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce"
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce z-10"
       >
         <div className="w-6 h-10 border-2 border-white/20 rounded-full flex justify-center">
           <div className="w-1 h-3 bg-gg-gold/60 rounded-full mt-2" />

@@ -3,9 +3,18 @@ import FadeInView from "@/components/shared/fade-in-view";
 export default function AboutPage() {
   return (
     <div className="pt-20">
-      <section className="py-20 md:py-28 bg-gg-black text-white">
+      <section className="relative py-20 md:py-28 bg-gg-black text-white overflow-hidden">
+        <video
+          src="/Illustrations/Villa%20Animations/Villia%20Interior%20animation%202.mp4"
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gg-black/70" />
         <FadeInView>
-          <div className="container text-center">
+          <div className="container text-center relative z-10">
             <p className="text-gg-gold text-sm uppercase tracking-[0.2em] font-medium mb-4">About Us</p>
             <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
               Our Story
@@ -42,9 +51,32 @@ export default function AboutPage() {
       </section>
 
       <section className="py-20 md:py-28 bg-gray-50">
+        <div className="container max-w-5xl">
+          <div className="grid md:grid-cols-2 gap-8 items-stretch">
+            <div className="relative overflow-hidden min-h-[20rem]">
+              <img src="/Illustrations/Construction%20site/Indoor%20cons.jpg" alt="Ground - Construction" className="absolute inset-0 w-full h-full object-cover" />
+              <div className="absolute inset-0 bg-gradient-to-t from-gg-black/80 to-transparent" />
+              <div className="absolute bottom-0 left-0 right-0 p-8">
+                <h3 className="font-heading text-2xl font-bold text-gg-gold">Ground</h3>
+                <p className="text-white/70 text-sm mt-1">Raw strength, solid foundations, engineering integrity.</p>
+              </div>
+            </div>
+            <div className="relative overflow-hidden min-h-[20rem]">
+              <img src="/Illustrations/House%20indoor%20images/hall.jpg" alt="Grace - Design" className="absolute inset-0 w-full h-full object-cover" />
+              <div className="absolute inset-0 bg-gradient-to-t from-gg-black/80 to-transparent" />
+              <div className="absolute bottom-0 left-0 right-0 p-8">
+                <h3 className="font-heading text-2xl font-bold text-gg-gold">Grace</h3>
+                <p className="text-white/70 text-sm mt-1">Artistic vision, premium finishes, luxury aesthetics.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 md:py-28 bg-white">
         <div className="container max-w-3xl">
           <FadeInView>
-            <div className="p-10 bg-white border border-black/5">
+            <div className="p-10 bg-gray-50 border border-black/5">
               <p className="text-gg-gold text-xs uppercase tracking-[0.2em] font-medium mb-3">Founder&apos;s Message</p>
               <h2 className="font-heading text-2xl md:text-3xl font-bold text-gg-black">Sayan Bagchi</h2>
               <div className="mt-6 space-y-4 text-gg-warm-gray leading-relaxed">
@@ -87,7 +119,7 @@ export default function AboutPage() {
               <div className="text-center">
                 <h3 className="font-heading text-2xl font-bold text-gg-gold mb-4">Vision</h3>
                 <p className="text-gg-warm-gray text-sm leading-relaxed">
-                  To be India&apos;s most trusted name in luxury construction and interior design,
+                  To become India&apos;s most trusted name in luxury construction and interior design,
                   known for mastering every detail from root to roof.
                 </p>
               </div>

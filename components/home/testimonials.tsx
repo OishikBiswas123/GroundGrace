@@ -3,7 +3,7 @@ import FadeInView from "@/components/shared/fade-in-view";
 export default function Testimonials() {
   const testimonials = [
     { quote: "GroundGrace transformed our vision into a stunning reality. Their attention to detail and commitment to quality exceeded our expectations.", author: "Priya Sharma", role: "Homeowner, Kolkata" },
-    { quote: "Professional, punctual, and passionate about their craft. Our office space has never looked better. Highly recommended!", author: "Rahul Mehta", role: "CEO, TechVentures" },
+    { quote: "Professional, punctual, and passionate about their craft. Our office space has never looked better. Highly recommended!", author: "Aryan Shaw", role: "CEO, Melina Studios" },
     { quote: "From the initial consultation to the final handover, the experience was seamless. True craftsmen with an eye for elegance.", author: "Ananya Bose", role: "Architect, Bose Designs" },
   ];
 

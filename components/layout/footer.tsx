@@ -59,6 +59,17 @@ export default function Footer() {
           <p>&copy; {new Date().getFullYear()} GroundGrace. All rights reserved.</p>
           <p>Panihati, Kolkata</p>
         </div>
+        <p className="mt-6 text-center text-xs text-white/20">
+          Website Cooked by{" "}
+          <a
+            href="https://oishikbiswas.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white/30 hover:text-gg-gold transition-colors"
+          >
+            Oishik Biswas
+          </a>
+        </p>
       </div>
     </footer>
   );

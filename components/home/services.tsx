@@ -2,12 +2,12 @@ import { Building2, PencilRuler, Sofa, RotateCcw, Trees, Hammer } from "lucide-r
 import FadeInView from "@/components/shared/fade-in-view";
 
 const services = [
-  { icon: Building2, title: "Construction", description: "Residential, commercial, and turnkey construction with uncompromising quality." },
-  { icon: PencilRuler, title: "Architecture", description: "Architectural planning, 2D/3D floor plans, elevation design, and structural drawings." },
-  { icon: Sofa, title: "Interior Design", description: "Complete interior solutions, luxury design, space planning, and furniture layout." },
-  { icon: Hammer, title: "Modular Solutions", description: "Modular kitchens, wardrobes, false ceilings, and custom joinery." },
-  { icon: RotateCcw, title: "Renovation", description: "Home and office renovation, remodeling, and restoration services." },
-  { icon: Trees, title: "Landscaping", description: "Garden design, outdoor lighting, exterior facade, and landscape architecture." },
+  { icon: Building2, title: "Construction", description: "Residential, commercial, and turnkey construction with uncompromising quality.", image: "/Illustrations/Construction%20site/const.jpg" },
+  { icon: PencilRuler, title: "Architecture", description: "Architectural planning, 2D/3D floor plans, elevation design, and structural drawings.", image: "/Illustrations/House%20indoor%20images/round%20stairs.jpg" },
+  { icon: Sofa, title: "Interior Design", description: "Complete interior solutions, luxury design, space planning, and furniture layout.", image: "/Illustrations/House%20indoor%20images/modern%20interior.jpg" },
+  { icon: Hammer, title: "Modular Solutions", description: "Modular kitchens, wardrobes, false ceilings, and custom joinery.", image: "/Illustrations/House%20indoor%20images/kitchen.jpg" },
+  { icon: RotateCcw, title: "Renovation", description: "Home and office renovation, remodeling, and restoration services.", image: "/Illustrations/Construction%20site/Indoor%20cons%20(2).jpg" },
+  { icon: Trees, title: "Landscaping", description: "Garden design, outdoor lighting, exterior facade, and landscape architecture.", image: "/Illustrations/House%20outdoor%20images/landscape.jpg" },
 ];
 
 export default function Services() {
@@ -30,10 +30,15 @@ export default function Services() {
             const Icon = service.icon;
             return (
               <FadeInView key={service.title} delay={i * 0.1}>
-                <div className="group p-8 bg-white border border-black/5 hover:border-gg-gold/30 hover:shadow-lg transition-all h-full">
-                  <Icon size={32} className="text-gg-gold group-hover:scale-110 transition-transform" />
-                  <h3 className="mt-6 font-heading text-xl font-bold text-gg-black">{service.title}</h3>
-                  <p className="mt-3 text-sm text-gg-warm-gray leading-relaxed">{service.description}</p>
+                <div className="relative overflow-hidden group p-8 bg-white border border-black/5 hover:border-gg-gold/30 hover:shadow-lg transition-all h-full">
+                  <div className="absolute inset-0">
+                    <img src={service.image} alt="" className="w-full h-full object-cover opacity-0 group-hover:opacity-15 transition-opacity duration-500" />
+                  </div>
+                  <div className="relative z-10">
+                    <Icon size={32} className="text-gg-gold group-hover:scale-110 transition-transform" />
+                    <h3 className="mt-6 font-heading text-xl font-bold text-gg-black">{service.title}</h3>
+                    <p className="mt-3 text-sm text-gg-warm-gray leading-relaxed">{service.description}</p>
+                  </div>
                 </div>
               </FadeInView>
             );
